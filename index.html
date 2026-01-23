@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Swati Shukla - Econometrician & Statistician</title>
+    <title>Dr. Swati Shukla - Researcher</title>
     <style>
         * {
             margin: 0;
@@ -14,39 +14,35 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            color: #1e3a5f;
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 100%);
         }
 
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5f8d 100%);
             color: white;
             padding: 2rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 2rem;
         }
 
-        header h1 {
+        h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
 
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.95;
-        }
-
         nav {
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: #2c5f8d;
+            padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         nav ul {
@@ -54,184 +50,227 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-        }
-
-        nav li {
-            margin: 0;
+            gap: 2rem;
         }
 
         nav a {
-            display: block;
-            padding: 1rem 1.5rem;
-            color: #1e3c72;
+            color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: background-color 0.3s;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            background-color: #e9ecef;
+            color: #a8d5e2;
         }
 
         section {
             background: white;
             margin: 2rem auto;
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(30, 58, 95, 0.1);
+            max-width: 1200px;
         }
 
         h2 {
-            color: #1e3c72;
-            margin-bottom: 1.5rem;
+            color: #1e3a5f;
+            border-bottom: 3px solid #2c5f8d;
             padding-bottom: 0.5rem;
-            border-bottom: 3px solid #2a5298;
-            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
         }
 
         h3 {
-            color: #2a5298;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            font-size: 1.3rem;
+            color: #2c5f8d;
+            margin: 1.5rem 0 0.5rem;
         }
-        .role-description {
-            color: black;
-            font-weight: bold;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        .about-content {
+
+        .intro {
             display: grid;
-            grid-template-columns: 250px 1fr;
+            grid-template-columns: 1fr 200px;
             gap: 2rem;
             align-items: start;
         }
 
-        .profile-image {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .image-placeholder {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1rem;
-            text-align: center;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .education-item, .experience-item, .publication-item {
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
-            border-left: 3px solid #2a5298;
-        }
-
-        .degree {
-            font-weight: bold;
-            color: #1e3c72;
-            font-size: 1.1rem;
-        }
-
-        .institution {
-            color: #555;
-            font-style: italic;
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #2c5f8d;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
         .research-interests {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 1rem;
+            background: #f0f8ff;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #2c5f8d;
         }
 
-        .interest-tag {
-            background-color: #e7f1ff;
-            color: #1e3c72;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .publication-item {
-            background-color: #f8f9fa;
-            padding: 1rem;
-            border-radius: 5px;
+        .research-interests h3 {
+            margin-top: 0;
             margin-bottom: 1rem;
         }
 
-        .contact-info {
+        .interests-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.8rem;
+        }
+
+        .interest-item {
+            background: white;
+            padding: 0.8rem;
+            border-radius: 5px;
+            border-left: 3px solid #2c5f8d;
+            font-weight: 500;
+            color: #1e3a5f;
+        }
+
+        .education-box {
+            background: #f0f8ff;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #2c5f8d;
+        }
+
+        .education-box h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .education-item {
+            background: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            border-left: 3px solid #2c5f8d;
+        }
+
+        .degree-title {
+            font-weight: bold;
+            color: #1e3a5f;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .institution {
+            color: #2c5f8d;
+            margin-bottom: 0.2rem;
+        }
+
+        .publication {
+            background: #f0f8ff;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #2c5f8d;
+            border-radius: 5px;
+        }
+
+        .publication-title {
+            font-weight: bold;
+            color: #1e3a5f;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-authors {
+            color: #2c5f8d;
+            margin-bottom: 0.3rem;
+        }
+
+        .publication-venue {
+            font-style: italic;
+            color: #4a7ba7;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-links a {
+            display: inline-block;
+            background: #2c5f8d;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            margin: 0.3rem 0.3rem 0 0;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .publication-links a:hover {
+            background: #1e3a5f;
+        }
+
+       
+        .teaching-item {
+            background: #f0f8ff;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            border-left: 3px solid #2c5f8d;
+        }
+
+
+        .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         .contact-card {
-            background-color: #f8f9fa;
+            background: #f0f8ff;
             padding: 1.5rem;
             border-radius: 8px;
-            border-left: 4px solid #2a5298;
+            border: 2px solid #2c5f8d;
         }
 
         .contact-card h3 {
             margin-top: 0;
-            font-size: 1.1rem;
         }
 
-        .contact-card a {
-            color: #1e3c72;
-            text-decoration: none;
+        a {
+            color: #2c5f8d;
         }
 
-        .contact-card a:hover {
-            text-decoration: underline;
+        a:hover {
+            color: #1e3a5f;
         }
 
         footer {
-            background-color: #1e3c72;
+            background: #1e3a5f;
             color: white;
             text-align: center;
-            padding: 1.5rem 0;
+            padding: 1.5rem;
             margin-top: 2rem;
         }
 
         @media (max-width: 768px) {
-            .about-content {
+            .intro {
                 grid-template-columns: 1fr;
+                text-align: center;
             }
 
-            header h1 {
-                font-size: 1.8rem;
+            .profile-img {
+                margin: 0 auto;
             }
 
             nav ul {
                 flex-direction: column;
+                gap: 1rem;
             }
 
-            nav a {
-                text-align: center;
+            h1 {
+                font-size: 2rem;
             }
-        }
 
-        .status-badge {
-            background-color: #28a745;
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-left: 1rem;
+            .interests-list {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -239,192 +278,193 @@
     <header>
         <div class="container">
             <h1>Dr. Swati Shukla</h1>
-            <!-- <p>Econometrician & Statistician</p> -->
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#home">Home</a></li>
+             <li><a href="#educations">Education</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav><div class="container">
-        <section id="about">
+    </nav>
+
+    <div class="container">
+        <section id="home">
             <h2>About Me</h2>
-            <div class="about-content">
+            <div class="intro">
                 <div>
-                    
-                        <div style="
-    background-color: white; 
-    border: 5px solid #1e3c72; 
-    padding: 20px; 
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 250px;
-    height: 300px;
-    overflow: hidden;
-">
-    <img src="profile.jpg" alt="My profile photo" style="width:100%; height:100%; object-fit: cover;">
-</div>
-                        
-                    
-                </div>
-                <div>
-                    <p>I completed my PhD in the Department of Mathematics and Statistics at the Indian Institute of Technology Kanpur on December 18, 2025.
-                    My doctoral research was conducted under the joint supervision of <strong><a href="https://sites.google.com/site/subhrasankardhar/home" style="color: inherit; text-decoration: none;">Prof. Subhra Sankar Dhar</a></strong> and <strong><a href="https://home.iitk.ac.in/~shalab/" style="color: inherit; text-decoration: none;">Prof. Shalabh</a></strong>. My research focuses on censored regression models under endogeneity using robust estimation methods.</p>
+                    <p>I completed my PhD in the Department of Mathematics and Statistics at the Indian Institute of Technology Kanpur on December 18, 2025. My doctoral research was conducted under the joint supervision of <strong><a href="https://sites.google.com/site/subhrasankardhar/home" style="color: inherit; text-decoration: none;">Prof. Subhra Sankar Dhar</a></strong> and <strong><a href="https://home.iitk.ac.in/~shalab/" style="color: inherit; text-decoration: none;">Prof. Shalabh</a></strong>. My research focuses on censored regression models under endogeneity using robust estimation methods.</p>
                     
                     <p style="margin-top: 1rem;">I am deeply passionate about research and continuous learning, and I thrive in intellectually challenging environments. I am currently seeking postdoctoral positions and research-oriented roles in econometrics, statistics, and data science where I can further develop my research expertise and contribute meaningfully to ongoing projects.</p>
-                    
-                    <h3>Research Interests</h3>
-                    <div class="research-interests">
-                        <span class="interest-tag">Econometric Analysis</span>
-                        <span class="interest-tag">Nonparametric Statistics</span>
-                        <span class="interest-tag">Robust Statistics</span>
-                        <span class="interest-tag">Asymptotic Statistics</span>
-                    </div>
+                </div>
+                <div>
+                     <img src="profile.jpg" alt="Dr. Swati Shukla" class="profile-img">
                 </div>
             </div>
-        </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            
-            <div class="education-item">
-                <div class="degree">Doctor of Philosophy - Statistics</div>
-                <div class="institution"><strong style="color: black; font-weight: bold;">Department of Mathematics and Statistics, Indian Institute of Technology, Kanpur, India</strong></div>
+            <div class="research-interests">
+                <h3>Research Interests</h3>
+                <div class="interests-list">
+                    <div class="interest-item">Econometric Analysis</div>
+                    <div class="interest-item">Nonparametric Statistics</div>
+                    <div class="interest-item">Robust Statistics</div>
+                    <div class="interest-item">Asymptotic Statistics</div>
+                </div>
             </div>
 
-            <div class="education-item">
-                <div class="degree">Master of Technology - Industrial Mathematics and Scientific Computing</div>
-                <div class="institution"><strong style="color: black; font-weight: bold;">Department of Mathematics, Indian Institute of Technology, Madras, India</strong></div>
-            </div>
+                  
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <div class="degree-title">Doctor of Philosophy - Statistics</div>
+                    <div class="institution">Department of Mathematics and Statistics, Indian Institute of Technology, Kanpur, India</div>
+                </div>
 
-            <div class="education-item">
-                <div class="degree">Master of Science - Mathematics</div>
-                <div class="institution"><strong style="color: black; font-weight: bold;">Department of Mathematics, University of Rajasthan, India</strong></div>
-            </div>
+                <div class="education-item">
+                    <div class="degree-title">Master of Technology - Industrial Mathematics and Scientific Computing</div>
+                    <div class="institution">Department of Mathematics, Indian Institute of Technology, Madras, India</div>
+                </div>
 
-            <div class="education-item">
-                <div class="degree">Bachelor of Science - Mathematics</div>
-                <div class="institution"><strong style="color: black; font-weight: bold;">Department of Mathematics, University of Rajasthan, India</strong></div>
-            </div>
-        </section>
+                <div class="education-item">
+                    <div class="degree-title">Master of Science - Mathematics</div>
+                    <div class="institution">Department of Mathematics, University of Rajasthan, India</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="degree-title">Bachelor of Science - Mathematics</div>
+                    <div class="institution">Department of Mathematics, University of Rajasthan, India</div>
+                </div>
+                    </section>
 
         <section id="publications">
             <h2>Publications</h2>
             
             <h3>Journal Articles</h3>
             
-            <div class="publication-item">
-                <strong style="color: black; font-weight: bold;">Shukla, S.</strong>, <a href="https://sites.google.com/site/subhrasankardhar/home" style="font-weight: bold; color: #1e3c72;">Dhar, S. S.</a><strong>, and</strong> <a href="https://home.iitk.ac.in/~shalab/" style="font-weight: bold; color: #1e3c72;">Shalabh(2025)</a>.<strong style="color: black; font-weight: bold;">Applications of Nonlinear Tobit Models Under Endogeneity</strong>. <em><strong style="color: black; font-weight: bold;">Sankhya, Series B</strong></em>.<a href="https://doi.org/10.1007/s13571-025-00364-0">[arXiv]</a>
-
+            <div class="publication">
+                <div class="publication-title">Applications of Nonlinear Tobit Models Under Endogeneity</div>
+                <div class="publication-authors">Shukla, S., <strong><a href="https://sites.google.com/site/subhrasankardhar/home" style="color: inherit; text-decoration: none;">Dhar, S. S.,</a></strong> <strong>and <a href="https://home.iitk.ac.in/~shalab/" style="color: inherit; text-decoration: none;">Shalabh</a></strong></div>
+                <div class="publication-venue"><strong style="color: black; font-weight: bold;">Sankhya, Series B, 2025.</strong></div>
+                <div class="publication-links">
+                    <a href="https://doi.org/10.1007/s13571-025-00364-0">arXiv</a>
+                </div>
             </div>
 
-            <div class="publication-item">
-                <strong style="color: black; font-weight: bold;">Shukla, S.</strong>, <strong>and</strong> <a href="https://home.iitk.ac.in/~shalab/" style="font-weight: bold; color: #1e3c72;">Shalabh</a><strong>, and</strong> <a href="https://sites.google.com/site/subhrasankardhar/home" style="font-weight: bold; color: #1e3c72;">Dhar, S. S. (2025)</a>. <strong style="color: black; font-weight: bold;">Censored Regression Models with Endogeneity: A Survey</strong>. <em><strong style="color: black; font-weight: bold;">Journal of the Indian Society of Agricultural Statistics(To appear).</strong></em>
+            <div class="publication">
+                <div class="publication-title">Censored Regression Models with Endogeneity: A Survey</div>
+                <div class="publication-authors">Shukla, S., <strong><a href="https://home.iitk.ac.in/~shalab/" style="color: inherit; text-decoration: none;">Shalabh,</a></strong>  <strong> and <a href="https://sites.google.com/site/subhrasankardhar/home" style="color: inherit; text-decoration: none;">Dhar, S. S.,</a></strong></div>
+                <div class="publication-venue"><strong style="color: black; font-weight: bold;">Journal of the Indian Society of Agricultural Statistics, 2025 (To appear)</strong></div>
             </div>
 
             <h3>Preprints</h3>
             
-            <div class="publication-item">
-                <strong style="color: black; font-weight: bold;">Shukla, S.</strong>, <a href="https://sites.google.com/site/subhrasankardhar/home" style="font-weight: bold; color: #1e3c72;">Dhar, S. S.</a><strong>, and</strong> <a href="https://home.iitk.ac.in/~shalab/" style="font-weight: bold; color: #1e3c72;">Shalabh(2025+)</a>. <strong style="color: black; font-weight: bold;">Generalized M-Estimation in Censored Regression Model under Endogeneity (Under major revision)</strong>. <a href="https://arxiv.org/abs/2312.10690">[arXiv]</a>
+            <div class="publication">
+                <div class="publication-title">Generalized M-Estimation in Censored Regression Model under Endogeneity</div>
+                <div class="publication-authors">Shukla, S., <strong><a href="https://sites.google.com/site/subhrasankardhar/home" style="color: inherit; text-decoration: none;">Dhar, S. S.,</a></strong> <strong>and <a href="https://home.iitk.ac.in/~shalab/" style="color: inherit; text-decoration: none;">Shalabh</a></strong></div>
 
+                <div class="publication-venue"><strong style="color: black; font-weight: bold;">Under major revision.</strong></div>
+                <div class="publication-links">
+                    <a href="https://arxiv.org/abs/2312.10690">arXiv</a>
+                </div>
             </div>
 
-            <div class="publication-item">
-                <strong style="color: black; font-weight: bold;">Shukla, S.</strong>, <a href="https://sites.google.com/site/subhrasankardhar/home" style="font-weight: bold; color: #1e3c72;">Dhar, S. S.</a><strong>, and</strong> <a href="https://home.iitk.ac.in/~shalab/" style="font-weight: bold; color: #1e3c72;">Shalabh(2025+)</a>. <strong style="color: black; font-weight: bold;">L-Estimation Approach to Tobit Models with Endogeneity and Weakly Dependent Errors (Under review)</strong>. <a href="https://arxiv.org/pdf/2405.19145">[arXiv]</a>
+            <div class="publication">
+                <div class="publication-title">L-Estimation Approach to Tobit Models with Endogeneity and Weakly Dependent Errors</div>
+                <div class="publication-authors">Shukla, S., <strong><a href="https://sites.google.com/site/subhrasankardhar/home" style="color: inherit; text-decoration: none;">Dhar, S. S.,</a></strong> <strong>and <a href="https://home.iitk.ac.in/~shalab/" style="color: inherit; text-decoration: none;">Shalabh</a></strong></div>
 
+                <div class="publication-venue"><strong style="color: black; font-weight: bold;">Under review.</strong></div>
+                <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2405.19145">arXiv</a>
+                </div>
             </div>
 
             <h3>Book Chapters</h3>
             
-            <div class="publication-item">
-                <strong style="color: black; font-weight: bold;">Shukla, S.</strong>, <a href="https://sites.google.com/site/subhrasankardhar/home" style="font-weight: bold; color: #1e3c72;">Dhar, S. S.</a><strong>, and</strong> <a href="https://home.iitk.ac.in/~shalab/" style="font-weight: bold; color: #1e3c72;">Shalabh(2023)</a>. <strong style="color: black; font-weight: bold;">Regression Modelling Under Lp-Norm Loss Function.</strong>  <em><strong style="color: black; font-weight: bold;">Published in Advances in Mathematics Research</strong></em>.
+            <div class="publication">
+                <div class="publication-title">Regression Modelling Under Lp-Norm Loss Function</div>
+                <div class="publication-authors">Shukla, S., <strong><a href="https://sites.google.com/site/subhrasankardhar/home" style="color: inherit; text-decoration: none;">Dhar, S. S.,</a></strong> <strong>and <a href="https://home.iitk.ac.in/~shalab/" style="color: inherit; text-decoration: none;">Shalabh</a></strong></div>
+                <div class="publication-venue"><strong style="color: black; font-weight: bold;">Published in Advances in Mathematics Research, 2023.</strong></div>
+            </div>
+
+           
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching</h2>
+            
+            <div class="teaching-section">
+                <h3>Teaching Assistant</h3>
+                <p style="margin-bottom: 1rem; color: #4a7ba7;"><strong style="color: black; font-weight: bold;">Responsibilities involve grading copies and taking care of invigilation duties.</strong></p>
+                
+                <div class="teaching-item">
+                    <strong>(2020-2021)(Even Sem)</strong>-MTH-102A: Linear Algebra and Ordinary Differential Equations.
+                </div>
+                <div class="teaching-item">
+                    <strong>(2020-2021)(Odd)</strong>-MTH-101A: Mathematics-I.
+                </div>
+                <div class="teaching-item">
+                    <strong>(2021-2022)(Even Sem)</strong>-MTH-673A: Robust Statistical Methods.
+                </div>
+                <div class="teaching-item">
+                    <strong>(2022-2023)(Even Sem)</strong>-MTH-210A: Statistical Computing.
+                </div>
+                <div class="teaching-item">
+                    <strong>(2023-2024)(Odd Sem)</strong>-MTH-314A: Multivariate Analysis.
+                </div>
+            </div>
+
+            <div class="teaching-section">
+                <h3>Tutor</h3>
+                <p style="margin-bottom: 1rem; color: #4a7ba7;"> <strong style="color: black; font-weight: bold;">Responsibilities involve discussing assignment problems, grading copies and taking care of invigilation duties. </strong></p>
+                
+                <div class="teaching-item">
+                    <strong>(2023-2024)(Even Sem)</strong>-MSO-205A: Introduction to Probability Theory.
+                </div>
+            </div>
+
+            <div class="teaching-section">
+                <h3>Assistant Tutor</h3>
+                <p style="margin-bottom: 1rem; color: #4a7ba7;"> <strong style="color: black; font-weight: bold;">Responsibilities involve explaining the content of lectures to physically challenged students.</strong></p>
+                
+                <div class="teaching-item">
+                    <strong>(2024-2025)(Odd Sem, Ist half)</strong>-MTH-207M: Matrix Algebra and Linear Estimation.
+                </div>
+                <div class="teaching-item">
+                    <strong>(2024-2025)(Odd Sem, 2nd half)</strong>-MTH-206M: Matrix Algebra and Linear Estimation.
+                </div>
             </div>
         </section>
 
-        <body>
-    <section id="teaching">
-        <h2>Teaching Experience</h2>
-        <h3>Teaching Assistant</h3>
-        <p class="role-description"><strong style="color: black; font-weight: bold;">It involves the grading copies and taking care of the invigilation duties.</strong></p>
-        <div class="course-list">
-             <div class="publication-item"><span class="course-name"><strong style="color: #1e3c72; font-size: 15px;">MTH-102A:Linear Algebra and Ordinary Differential Equations</strong></span>
-            </div>
-             <div class="publication-item">
-              <span class="course-name"><strong style="color: #1e3c72; font-size: 15px;">MTH-101A:Mathematics-I</strong></span></div>
-             <div class="publication-item">
-              <span class="course-name"><strong style="color: #1e3c72; font-size: 15px;">MTH-673A: Robust Statistical Methods</strong></span>
-            </div>
-             <div class="publication-item"><span class="course-name"><strong style="color: #1e3c72; font-size: 15px;">MTH-210A: Statistical Computing</strong></span>
-            </div>
-            <div class="publication-item"><span class="course-code"><strong style="color: #1e3c72; font-size: 15px;">MTH-314A:Multivariate Analysis</strong></span>
-             </div>
-        </div>
-        <div class="divider"></div>
-        <h3>Tutor</h3>
-        <p class="role-description"><strong style="color: black; font-weight: bold;">
-            It involves discussing assignment problems, grading copies and taking care of invigilation duties.</strong></p>
-        <div class="publication-item"><span class="course-code"><strong style="color: #1e3c72; font-size: 15px;">MSO-205A:Introduction to Probability Theory</strong></span>
-            </div> 
-        <div class="divider"></div>
-        <h3>Assistant Tutor</h3>
-        <p class="role-description"><strong style="color: black; font-weight: bold;">
-            It involves explaining the content of the lectures to the physically challenged students.</strong>
-        </p>
-        <div class="publication-item"><span class="course-code"><strong style="color: #1e3c72; font-size: 15px;">MTH-207M:Matrix Algebra and Linear Estimation</strong></span>
-          </div> 
-        <div class="publication-item"><span class="course-code"><strong style="color: #1e3c72; font-size: 15px;">MTH-206M:Matrix Algebra and Linear Estimation</strong></span>
-            </div> 
-           </section>
-</body>
-
-
         <section id="contact">
             <h2>Contact Information</h2>
+            <p><strong style="color: black; font-weight: bold;">Email is the preferred way to contact me.</strong></p>
             
-            <div class="contact-info">
-    <div class="contact-card">
-        <h3>Email</h3>
-        <p style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: nowrap;">
-            <span>
-                <strong style="color: black;">Official Email:</strong>
-                <a href="mailto:shukla@iitk.ac.in" style="color: #1e3c72; text-decoration: none; font-weight: bold;">
-                    shukla@iitk.ac.in
-                </a>
-            </span>
-            <span>|</span>
-            <span>
-                <strong style="color: black;">Personal Email:</strong>
-                <a href="mailto:shuklaswati1602@gmail.com" style="color: #1e3c72; text-decoration: none; font-weight: bold;">
-                    shuklaswati1602@gmail.com
-                </a>
-            </span>
-        </p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Office Address</h3>
+                    <p>Department of Mathematics and Statistics<br>
+                    Indian Institute of Technology Kanpur<br>
+                    Kanpur, India</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Official Email</h3>
+                    <p><a href="mailto:swati@iitk.ac.in">swati@iitk.ac.in</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Personal Email</h3>
+                    <p><a href="mailto:shuklaswati1602@@gmail.com">shuklaswati1602@@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <div class="contact-card">
-        <h3>Mailing Address</h3>
-        <p>
-            <strong style="color: black; font-weight: bold;">310 B, New Core Lab,</strong><br>
-            <strong style="color: black; font-weight: bold;">Department of Mathematics and Statistics</strong><br>
-            <strong style="color: black; font-weight: bold;">Indian Institute of Technology, Kanpur</strong><br>
-            <strong style="color: black; font-weight: bold;">Kanpur, India</strong>
-        </p>
-    </div>
-</div>
-
-    <footer style="
-    background-color: #1e3c72;
-    padding: 20px;
-    text-align: center;
-    color: white;
-">
-   <p style="font-size: 14px; margin-bottom: 12px;">
+    <footer>
+       <p style="font-size: 14px; margin-bottom: 12px;">
         A list of publications can also be found on my Google Scholar page and ResearchGate.
     </p>
 
@@ -444,26 +484,7 @@
                  style="width: 40px; height: 40px; vertical-align: middle;">
         </a>
     </div>
-</footer>
-</body>
-        <div 
-</body>
 
+    </footer>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
